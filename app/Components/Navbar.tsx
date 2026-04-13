@@ -27,7 +27,7 @@ const Navbar = () => {
             {link.name}
           </Link>
         ))}
-       <button className="bg-[#2579F4] px-4 text-white py-2 font-medium rounded-lg shadow-lg text-shadow-md tracking-wider">
+       <button className="cursor-pointer bg-[#2579F4] px-4 text-white py-2 font-medium rounded-lg shadow-lg text-shadow-md tracking-wider">
          Get Started
        </button>
       </div>
