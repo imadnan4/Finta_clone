@@ -7,9 +7,9 @@ export default function Home() {
 
   return (
     <div className={pageClassName}>
-      <div className="max-w-7xl mx-auto absolute inset-0 h-full w-full">
-      <div className="absolute inset-y-0 left-0 h-full w-px bg-gradient-to-b from-neutral-300/50 via-neutral-200 to-transparent"/>
-      <div className="absolute inset-y-0 right-0 h-full w-px bg-gradient-to-b from-neutral-300/50 via-neutral-200 to-transparent"/>
+      <div className="max-w-7xl mx-auto absolute inset-0 h-full w-full pointer-events-none" aria-hidden="true">
+      <div className="absolute inset-y-0 left-0 h-full w-px bg-linear-to-b from-neutral-300/50 via-neutral-200 to-transparent"/>
+      <div className="absolute inset-y-0 right-0 h-full w-px bg-linear-to-b from-neutral-300/50 via-neutral-200 to-transparent"/>
       </div>
       <Container>
         <Navbar />
