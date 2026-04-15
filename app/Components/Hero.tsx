@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import arrowsvg from '../../public/arrow.svg'
 
 const Hero = () => {
@@ -14,11 +15,20 @@ const Hero = () => {
       >
         Income taxes and R&D credits are due by April 15th
       </span>
-      <img draggable={false} loading='lazy' className="ml-2" src={arrowsvg.src} alt="Arrow Icon" width={16} height={16} />
+      <Image draggable={false} className="ml-2" src={arrowsvg} alt="Arrow Icon" width={16} height={16} />
       </button>
-      <h1 className='px-4 py-2 font-medium text-6xl mt-12 text-center text-black tracking-[-2]'>Magically Simplify <br />accounting and taxes</h1>
-      <p className='px-4 py-2 mt-1 font-medium text-center text-neutral-400 '>Automated bookkeeping. Effortless tax filing. Financial clarity.<br />Set up in 10 mins. Back to building by {new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true })}.</p>
+      <h1 className='px-4 py-2 font-medium text-6xl mt-12 text-center text-black tracking-[-1]'>Magically Simplify <br />accounting and taxes</h1>
+      <p className='text-xl px-4 py-2 mt-1 font-semibold text-center text-neutral-500 '>Automated bookkeeping. Effortless tax filing. Financial clarity.<br />Set up in 10 mins. Back to building by {new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true })}.</p>
     
+      <div className="flex gap-4 mt-6">
+      <button className="cursor-pointer bg-[#2579F4] hover:bg-[#1e5fc4] px-4 text-white py-2 font-medium rounded-lg shadow-lg text-shadow-md tracking-wider transition-colors duration-200">
+        Get Started
+      </button> 
+      <button className='font-mediumcursor-pointer bg-none hover:bg-gray-200 py-2 px-4 rounded-lg flex items-center gap-2 '>
+        Pricing
+        <Image draggable={false} src={arrowsvg} alt="Arrow Icon" width={16} height={16} />
+      </button>
+      </div>   
     </div>
   )
 }
