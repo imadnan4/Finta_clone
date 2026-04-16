@@ -4,7 +4,7 @@ import arrowsvg from '../../public/arrow.svg'
 
 const Hero = () => {
   return (
-    <div className='px-4 py-2 w-full flex items-center flex-col my-20'>
+    <div className='px-4 py-2 w-full flex items-center flex-col mt-20 mb-12'>
       
       <button
         type="button"
@@ -17,8 +17,8 @@ const Hero = () => {
       </span>
       <Image draggable={false} className="ml-2" src={arrowsvg} alt="Arrow Icon" width={16} height={16} />
       </button>
-      <h1 className='px-4 py-2 font-medium text-6xl mt-12 text-center text-black tracking-[-1]'>Magically Simplify <br />accounting and taxes</h1>
-      <p className='text-xl px-4 py-2 mt-1 font-semibold text-center text-neutral-500 '>Automated bookkeeping. Effortless tax filing. Financial clarity.<br />Set up in 10 mins. Back to building by {new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true })}.</p>
+      <h1 className='px-4 py-2 font-medium text-6xl mt-10 text-center text-black tracking-tight'>Magically Simplify <br />accounting and taxes</h1>
+      <p className='max-w-2xl text-lg px-4 py-2 mt-2 font-semibold text-center text-neutral-500 '>Automated bookkeeping. Effortless tax filing. Financial clarity.<br />Set up in 10 mins. Back to building by {new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true })}.</p>
     
       <div className="flex gap-4 mt-6">
       <button className="cursor-pointer bg-[#2579F4] hover:bg-[#1e5fc4] px-4 text-white py-2 font-medium rounded-lg shadow-lg text-shadow-md tracking-wider transition-colors duration-200">
@@ -28,7 +28,8 @@ const Hero = () => {
         Pricing
         <Image draggable={false} src={arrowsvg} alt="Arrow Icon" width={16} height={16} />
       </button>
-      </div>   
+      </div>
+      <p className='text-center font-light text-[0.8rem] tracking-widest text-neutral-400 mt-8'>For US-based startups.</p>
     </div>
   )
 }
